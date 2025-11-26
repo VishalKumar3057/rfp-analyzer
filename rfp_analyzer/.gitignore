@@ -1,0 +1,41 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+myenv/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Local data and indexes (RFP PDFs, ChromaDB, results)
+# These are personal / environment-specific and should not go to GitHub
+/data/
+results/
+logs/
+
+# Test, coverage, and tooling caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Hide personal docs (md/txt) except README.md
+*.md
+*.txt
+!README.md
+

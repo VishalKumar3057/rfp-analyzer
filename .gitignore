@@ -1,0 +1,12 @@
+# Ignore everything by default at repo root
+/*
+
+# But keep this root ignore file itself
+!.gitignore
+
+# Keep the main project folder
+!rfp_analyzer/
+
+# (Optional) Keep the assessment spec document referenced by the project
+!AI Engineer Assessment_ RFP (Request for propsal) Analysis with RAG + LLM.docx
+

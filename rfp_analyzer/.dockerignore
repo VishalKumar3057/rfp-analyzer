@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# Environment and secrets
+.env
+*.env
+
+# Local data and results (mounted as volumes at runtime)
+data/chroma_db/
+results/
+
+# OS / editor noise
+*.swp
+*.tmp
+.DS_Store
+.idea/
+.vscode/
+

@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    container_name: rfp-analyzer-api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist vector store and results inside the project folder
+      - ./data:/app/data
+      # Mount RFP PDFs as read-only into /data inside the container
+      - ./data/pdfs:/data:ro
+    # Explicit command (matches Dockerfile default)
+    command: uvicorn src.api.app:app --host 0.0.0.0 --port 8000
+    restart: unless-stopped
+
