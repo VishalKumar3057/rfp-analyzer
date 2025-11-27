@@ -201,15 +201,3 @@ rfp_analyzer/
 ├── data/              # Vector store persistence
 └── results/           # Evaluation results
 ```
-
-## Evaluation Metrics
-
-Each test scenario is scored on:
-- **Retrieval Quality** (0-25): Did you find all relevant sections?
-- **Reasoning Quality** (0-30): Is the analysis correct and well-explained?
-- **Completeness** (0-20): Did you catch all requirements?
-- **Clarity** (0-15): Is output actionable?
-- **Structure** (0-10): Is JSON output valid?
-
-**Target Score: 80+ per scenario**
-
